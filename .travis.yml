@@ -8,5 +8,5 @@ services:
 before_script:
   - sleep 10
 script:
-  - mysql -e 'SHOW GLOBAL STATUS LIKE '%Connection_errors%'; '
+  - mysql -e 'SHOW GLOBAL STATUS;'
 
