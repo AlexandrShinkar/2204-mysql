@@ -1,8 +1,6 @@
 dist: jammy
 group: dev
-virt:
-  - vm
-  - lxd
+virt: lxd
 services:
   - mysql
 before_script:
