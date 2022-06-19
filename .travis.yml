@@ -1,0 +1,12 @@
+dist: jammy
+group: dev
+arch:
+  - amd64
+  - arm64
+services:
+  - mysql
+before_script:
+  - sleep 10
+script:
+  - mysql -e 'SHOW GLOBAL STATUS LIKE '%Connection_errors%'; '
+
