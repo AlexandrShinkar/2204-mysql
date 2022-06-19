@@ -1,6 +1,8 @@
 dist: jammy
 group: dev
-virt: lxd
+arch:
+  - amd64
+  - arm64
 services:
   - mysql
 before_script:
